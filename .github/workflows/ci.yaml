@@ -39,21 +39,12 @@ jobs:
         id: build-and-push
         uses: pahud/ecr-public-action@0db8adbcfd3c3ec2f604d70fdd6b5d15c80e1dbc
         with:
-          dockerfile: docker/golang/Dockerfile
+          dockerfile: docker/golang/single/Dockerfile
           context: .
           create_repo: ${{ steps.repoName.outputs.reponame }}
           tags: |
             public.ecr.aws/iflytek-open/${{ steps.repoName.outputs.reponame }}:latest
         
-
-#      - name: Build, tag, and push image to Amazon ECR public
-#        env:
-#          ECR_REGISTRY: public.ecr.aws/iflytek-open
-#          ECR_REPOSITORY: my-ecr-repo
-#          IMAGE_TAG: ${{ github.sha }}
-#        run: |
-#          docker build -f docker/golang/Dockerfile -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-#          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
 
 
