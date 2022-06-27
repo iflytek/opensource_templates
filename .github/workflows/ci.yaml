@@ -41,7 +41,7 @@ jobs:
         with:
           dockerfile: docker/golang/Dockerfile
           context: .
-          create_repo: ecr_repo_name
+          create_repo: ${{ steps.repoName.outputs.reponame }}
           tags: |
             public.ecr.aws/iflytek-open/${{ steps.repoName.outputs.reponame }}:latest
         
