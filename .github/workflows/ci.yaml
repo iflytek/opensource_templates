@@ -44,7 +44,7 @@ jobs:
           create_repo: ecr_repo_name
           tags: |
             public.ecr.aws/iflytek-open/${{ steps.repoName.outputs.reponame }}:latest
-            public.ecr.aws/iflytek-open/${{ steps.repoName.outputs.reponame }}:${{ steps.sha.outputs.sha7 }}
+        
 
 #      - name: Build, tag, and push image to Amazon ECR public
 #        env:
