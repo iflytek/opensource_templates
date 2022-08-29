@@ -27,13 +27,13 @@ iflytek开源项目示例模板旨在提供待开源项目一个开源仓库范�
 
 1. 提供一些常用的Dockerfile模板
 
-参考 `docker/golang/multi/Dockerfile` 进行多阶段构建，构建最终产物镜像会非常小，根据需要选用
+参考 [Dockerfile](docker/golang/multi/Dockerfile) 进行多阶段构建，构建最终产物镜像会非常小，根据需要选用
 
-参考 `docker/golang/single/Dockerfile`阶段构建， 产物镜像大小依赖于基础镜像，和本次构建产物大小
+参考 [Dockerfile](`docker/golang/single/Dockerfile`)阶段构建， 产物镜像大小依赖于基础镜像，和本次构建产物大小
 
 2. 提供一些Github CI Action模板
 
-参考 `.github/workflows/ci.yaml` 进行ci配置， 产物最终推送到 aws的docker公共仓库  iflytek-open 仓库下，
+参考 [ci.yaml](`.github/workflows/ci.yaml`) 进行ci配置， 产物最终推送到 aws的docker公共仓库  iflytek-open 仓库下，
 
 3. 提供Readme.md模板
 
