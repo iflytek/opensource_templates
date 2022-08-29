@@ -29,11 +29,11 @@ iflytek开源项目示例模板旨在提供待开源项目一个开源仓库范�
 
 参考 [Dockerfile](docker/golang/multi/Dockerfile) 进行多阶段构建，构建最终产物镜像会非常小，根据需要选用
 
-参考 [Dockerfile](`docker/golang/single/Dockerfile`)阶段构建， 产物镜像大小依赖于基础镜像，和本次构建产物大小
+参考 [Dockerfile](docker/golang/single/Dockerfile)阶段构建， 产物镜像大小依赖于基础镜像，和本次构建产物大小
 
 2. 提供一些Github CI Action模板
 
-参考 [ci.yaml](`.github/workflows/ci.yaml`) 进行ci配置， 产物最终推送到 aws的docker公共仓库  iflytek-open 仓库下，
+参考 [ci.yaml](.github/workflows/ci.yaml) 进行ci配置， 产物最终推送到 aws的docker公共仓库  iflytek-open 仓库下，
 
 3. 提供Readme.md模板
 
@@ -50,7 +50,7 @@ iflytek开源项目示例模板旨在提供待开源项目一个开源仓库范�
 
 
 ## Quickstart
-
+***示例****
 ```bash
 以下均为demo
 kubectl create namespace argo
@@ -58,16 +58,17 @@ kubectl apply -n argo -f https://raw.githubusercontent.com/argoproj/argo-workflo
 ```
 
 ## Client Libraries
-
+***示例****
 Check out our [Java, Golang and Python clients](docs/client-libraries.md).
 
 
 ## 谁在用?
-
+***示例****
 [Official Argo Workflows user list](USERS.md)
 
 ## 文档
 
+***示例****
 * [Get started here](docs/quick-start.md)
 * [How to write Argo Workflow specs](https://github.com/argoproj/argo-workflows/blob/master/examples/README.md)
 * [How to configure your artifact repository](docs/configure-artifact-repository.md)
